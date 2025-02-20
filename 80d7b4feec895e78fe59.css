@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @font-face {
   font-family: "Melodrama Medium";
-  src: url("./cc3c08da2274ac750a40.otf") format("opentype");
+  src: url("./fonts/cc3c08da2274ac750a40.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Melodrama Bold";
-  src: url("./20e6027a8a29149a9b93.otf") format("opentype");
+  src: url("./fonts/20e6027a8a29149a9b93.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -266,8 +266,9 @@ body {
   display: flex;
   justify-content: end;
 }
-.navbar__container__buttonWrapper button {
+.navbar__container__buttonWrapper a {
   margin-left: auto;
+  text-decoration: none;
   width: fit-content;
   font-size: 16px;
   padding: 12.5px 40px;
@@ -278,19 +279,19 @@ body {
   border: none;
   border: 1px solid #2d2924;
   background-color: #fffcf7;
-  transition: 0.25s all ease-in;
+  transition: 0.15s all ease-in;
 }
 @media screen and (max-width: 1024px) {
-  .navbar__container__buttonWrapper button {
+  .navbar__container__buttonWrapper a {
     display: none;
   }
 }
-.navbar__container__buttonWrapper button:hover {
+.navbar__container__buttonWrapper a:hover {
   cursor: pointer;
   background-color: #2d2924;
   color: #fffcf7;
   border-color: #fffcf7;
-  transition: 0.25s all ease-in;
+  transition: 0.15s all ease-in;
 }
 .navbar__container h1 {
   flex: 0;
@@ -329,8 +330,8 @@ body {
   font-size: 16px;
 }
 .navbar__container__menu a:hover {
-  background-color: #fffcf7;
-  color: #2d2924;
+  background-color: #2d2924;
+  color: #fffcf7;
   transition: 0.15s all ease-in;
   border-radius: 50vw;
   cursor: pointer;
@@ -470,10 +471,11 @@ body {
     font-size: 14px;
   }
 }
-.main__title button {
+.main__title a {
   width: fit-content;
   margin: 0 auto;
   display: block;
+  text-decoration: none;
   margin-top: 25px;
   font-size: 16px;
   font-family: "Inter";
@@ -485,9 +487,11 @@ body {
   outline: none;
   border-radius: 999vw;
   transition: 0.25s all ease-in;
+  background-color: #fffcf7;
+  color: #2d2924;
   border: 1px solid #fffcf7;
 }
-.main__title button:hover {
+.main__title a:hover {
   cursor: pointer;
   color: #fffcf7;
   background: transparent;
@@ -1499,11 +1503,12 @@ body {
     font-size: 15px;
   }
 }
-.book button {
+.book a {
   background-color: #fffcf7;
   color: #2d2924;
   border: 1px solid #fffcf7;
   outline: none;
+  text-decoration: none;
   position: absolute;
   right: 40px;
   top: 40px;
@@ -1512,14 +1517,14 @@ body {
   padding: 15px 50px;
   transition: all 0.25s ease-in-out;
 }
-.book button:hover {
+.book a:hover {
   transition: all 0.25s ease-in-out;
   cursor: pointer;
   background-color: transparent;
   color: #fffcf7;
 }
 @media screen and (max-width: 760px) {
-  .book button {
+  .book a {
     position: relative;
     top: unset;
     right: unset;
